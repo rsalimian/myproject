@@ -2,9 +2,9 @@
     "name": "docker_web_app",
     "version": "1.0.0",
     "description": "Node.js on Docker",
-    "main": "server.js",
+    "main": "app.js",
     "scripts": {
-        "start": "node server.js",
+        "start": "node app.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
@@ -18,6 +18,9 @@
     },
     "homepage": "https://github.com/rsalimian/myproject#readme",
     "dependencies": {
-        "express": "^4.16.4"
+        "express": "^4.16.4",
+        "body-parser": "^1.15.0",
+        "ejs": "^2.4.1",
+        "mongoose": "^4.4.7"
     }
 }
