@@ -19,4 +19,6 @@ mongoose.connect(config.getDbConnectionString(), { 'useMongoClient': true });
 setupController(app);
 apiController(app);
 
-app.listen(port);
+app.listen(port, function() {
+    console.log(`app running on port: ${port}`);
+});
