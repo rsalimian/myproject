@@ -1,6 +1,8 @@
 // CONTROLLERS
 weatherApp.controller('homeController', ['$scope', '$location', 'cityService', function($scope, $location, cityService) {
 
+    // TODO: load history data from mongoDB and show as a ul undernead the Get Forecast button.
+    
     $scope.city = cityService.city;
 
     $scope.$watch('city', function() {
@@ -9,6 +11,9 @@ weatherApp.controller('homeController', ['$scope', '$location', 'cityService', f
 
     $scope.submit = function() {
         $location.path("/forecast");
+
+        // TODO: add to monogoDB 
+
     };
 
 }]);
