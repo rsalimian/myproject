@@ -2,7 +2,8 @@
 weatherApp.controller('homeController', ['$scope', '$location', 'cityService', function($scope, $location, cityService) {
 
     // TODO: load history data from mongoDB and show as a ul undernead the Get Forecast button.
-    
+    $scope.cityHistory = cityService.history;
+
     $scope.city = cityService.city;
 
     $scope.$watch('city', function() {

@@ -3,7 +3,14 @@ weatherApp.service('cityService', function() {
 
     this.city = "New York";
 
+    this.history = [
+        'Austin',
+        'New York',
+        'Los Angeles'
+    ];
+
 });
+
 
 weatherApp.service('weatherService', ['$resource', function($resource) {
 
